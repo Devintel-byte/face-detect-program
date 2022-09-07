@@ -14,9 +14,9 @@ const USER_ID = 'z5bb5ynui3zo';
     const PAT = '48f10ca29c1d4284a4a618b22c8216f2';
     const APP_ID = 'Devintel21';
     // Change these to whatever model and image URL you want to use
-    const MODEL_ID = 'general-image-recognition';
-    const MODEL_VERSION_ID = 'aa7f35c01e0642fda5cf400f543e7c40';    
-    const IMAGE_URL = 'https://samples.clarifai.com/metro-north.jpg';
+    const MODEL_ID = 'face-detection';
+    const MODEL_VERSION_ID = 'fe995da8cb73490f8556416ecf25cea3';    
+    const IMAGE_URL = '';
 
     const raw = JSON.stringify({
       "user_app_id": {
@@ -27,7 +27,7 @@ const USER_ID = 'z5bb5ynui3zo';
           {
               "data": {
                   "image": {
-                      "url": IMAGE_URL
+                      "url": IMAGE_URL,
                   }
               }
           }
@@ -49,7 +49,7 @@ class App extends Component {
     super();
     this.state = {
       input: '',
-      imageUrl: ''
+      imageUrl: '',
     }
   }
 

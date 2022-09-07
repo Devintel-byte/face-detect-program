@@ -83,7 +83,7 @@ function Particle() {
                 enable: true,
                 area: 800,
               },
-              value: 100,
+              value: 120,
             },
             opacity: {
               value: 0.5,
@@ -92,7 +92,7 @@ function Particle() {
               type: "circle",
             },
             size: {
-              value: { min: 1, max: 5 },
+              value: { min: 1, max: 4 },
             },
           },
           detectRetina: true,
